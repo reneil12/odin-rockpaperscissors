@@ -3,22 +3,45 @@
   <head>
     <meta charset="utf-8"/>
     <title>Rock Paper and Scissors</title>
-    <style>
-      
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   </head>
 
   <body>
-
-    <section class="preview">
-      <button class="btn" value="rock">Rock</button>
-      <button class="btn" value="paper">Paper</button>
-      <button class="btn" value="scissors">Scissors</button>
-      <button class="reset-btn">Reset</button>
-      <label class="result"></label>
-      <label class="score">Player: 0 Computer: 0</label>
-      <label class="winner"></label>
-      <label for=""></label>
+    <div class="top-section">
+      <div class="title-border">
+        <p>ROCK PAPER SCISSORS</p>
+      </div>
+    </div>
+    <section class="game-container">
+      <div class="title">
+        <p class="winner">Choose Your Item</p>
+      </div>
+      <div class="choices-container">
+        <div class="choices-card">
+          <button class="btn" value="rock"><img src="images/rock.png" alt=""></button>
+          <p>Rock</p>
+        </div>
+        <div class="choices-card">
+          <button class="btn" value="paper"><img src="images/paper.png" alt=""></button>
+          <p>Paper</p>
+        </div>
+        <div class="choices-card">
+          <button class="btn" value="scissors"><img src="images/scissors.png" alt=""></button>
+          <p>Scissors</p>
+        </div>
+      </div>
+      <div class="score-container">
+        <label class="result">Good Luck!</label>
+        <label class="score">Player: 0 Computer: 0</label>
+      </div>
+      <div class="reset-container">
+        <button class="reset-btn">Reset</button>
+      </div>
+      
+      
     </section>
 
   </body>

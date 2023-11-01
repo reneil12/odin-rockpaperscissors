@@ -30,6 +30,7 @@ resetButton.addEventListener('click', () => {
     computerScore = 0;
     resultText.textContent = originalResultText;
     scoreText.textContent = originalScoreText;
+    resetButton.style.color = 'rgb(46, 45, 45)';
     winnerText.textContent = originalWinnerText;
     resetButton.disabled = true;
         playerChoice.forEach((button) => {
@@ -103,6 +104,7 @@ function playRound(){
 function determineWinner(){
     if (playerScore === 5 || computerScore === 5){
         resetButton.disabled = false;
+        resetButton.style.color = 'white';
         playerChoice.forEach((button) => {
             button.disabled = true;
         })

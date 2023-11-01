@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2p';
+    color: white;
+}
+
+body{
+    
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-section {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-border{
+    height: 60px;
+    width: 700px;
+    
+    border: 3px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-border > p {
+    font-size: 30px;
+}
+
+.game-container{
+    display: flex;
+    height: 700px;
+    width: 1500px;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 50px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title > p {
+    font-size: 30px;
+}
+
+.choices-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.choices-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+}
+
+.choices-card > .btn {
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 170px;
+    width: 170px;
+}
+
+.btn,
+.reset-btn:hover{
+    cursor: pointer;
+}
+
+.btn > img {
+    height: 150px;
+    width: 150px;
+}
+
+.score-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    font-size: 20px;
+}
+
+.reset-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reset-container > .reset-btn{
+    height: 60px;
+    width: 150px;
+    border-radius: 10px;
+    border: 3px solid white;
+    background-color: black;
+    color: rgb(46, 45, 45);
+}
